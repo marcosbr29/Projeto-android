@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 import { colors } from '../../theme/colors';
 import { styles } from './styles';
 
-// Dados de exemplo — troque depois por dados vindos de uma API/estado global
+// Dados de exemplo — tenho que trocar depois por dados vindos de uma API/estado global
 const RECENT_EXPENSES = [
   {
     id: '1',

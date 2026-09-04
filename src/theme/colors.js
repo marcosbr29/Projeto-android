@@ -1,5 +1,5 @@
 export const colors = {
-  primary: '#0F9D6C',      // verde do header e botão
+  primary: '#0F9D6C',     
   primaryDark: '#0B7A54',
   background: '#F5F6F8',
   white: '#FFFFFF',
