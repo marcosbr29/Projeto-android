@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
+import { useRouter } from 'expo-router';
 import BalanceCard from '../../components/BalanceCard';
 import BottomNav from '../../components/BottomNav';
 import ExpenseItem from '../../components/ExpenseItem';
@@ -37,6 +38,8 @@ const RECENT_EXPENSES = [
 ];
 
 export default function HomeScreen() {
+  const router = useRouter();
+
   return (
     <View style={styles.screen}>
       <Header userName="Marcos" month="Agosto" />
@@ -68,7 +71,10 @@ export default function HomeScreen() {
           ))}
         </View>
 
-        <TouchableOpacity style={styles.addButton}>
+        <TouchableOpacity
+          style={styles.addButton}
+          onPress={() => router.push('/add-expense')}
+        >
           <Ionicons name="add" size={20} color="#fff" />
           <Text style={styles.addButtonText}>Adicionar</Text>
         </TouchableOpacity>
